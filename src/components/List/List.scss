@@ -1,6 +1,25 @@
 .list {
     margin-bottom: 30px;
     
+    &__add-button {
+      svg {
+        path {
+          stroke: #868686;
+        }
+      }
+      span {
+        color: #767676
+      }
+
+      &:hover {
+        svg,
+        span {
+          opacity: .4;
+          color: #000
+        }
+      }
+    }
+
     li {
       display: flex;
       align-items: center;
@@ -29,23 +48,5 @@
           fill: #777;
         }
       }
-    }
-
-    .badge {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-
-        &--green {
-            background-color: #42B883;
-        }
-        
-        &--blue {
-            background-color: #64C4ED;
-        }
-
-        &--pink {
-            background-color: #FFBBCC;
-        }
     }
 }
