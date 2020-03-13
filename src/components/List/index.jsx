@@ -21,7 +21,7 @@ const List = ({ items, isRemovable , onClick, onRemove}) => {
                     <i>{ item.icon ? (
                             item.icon
                         ) : (
-                            <Badge color={item.color}/>                        )
+                            <Badge color={item.color.name}/>                        )
                         }</i>
                     <span>{ item.name }</span>
                     {isRemovable && 
